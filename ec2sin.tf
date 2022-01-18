@@ -16,6 +16,9 @@ provider "aws" {
 
  #text
 
+resource "aws_vpc" "main" {
+  cidr_block = "10.10.0.0/16"
+}
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.micro"
