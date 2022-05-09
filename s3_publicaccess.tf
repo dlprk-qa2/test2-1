@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "publicaccess" {
-  bucket = "examplebuckettftest"
+  bucket = "examplebuckettftest1"
   acl    = "public"
   versioning {
     enabled = true
